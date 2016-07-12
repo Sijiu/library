@@ -39,6 +39,9 @@ class TestHandler(tornado.web.RequestHandler):
         hello = "Oh, Help me!"
         self.render("index.html", hello=hello)
 
+    def post(self):
+        arry = ['PHP', 'MySQL', 'SQL', 'PostgreSQL', 'HTML', 'CSS','666', 'HTML5', 'CSS3', 'JSON']
+        return arry
 
 if __name__ == "__main__":
     print 'Development server running on "http://localhost:8888"'
